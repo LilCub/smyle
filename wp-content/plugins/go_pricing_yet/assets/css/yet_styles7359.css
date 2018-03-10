@@ -1,0 +1,474 @@
+/* -------------------------------------------------------------------------------- /
+	[1] LAYOUT
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-col-wrap { margin-left:0; }
+.gw-go-yet-style .gw-go-col { 
+	border: 0;
+    -moz-transition:margin-top 0.3s linear, top 0.3s linear, box-shadow 0.3s linear;
+    -webkit-transition:margin-top 0.3s linear, top 0.3s linear, box-shadow 0.3s linear;
+    transition:margin-top 0.3s linear, top 0.3s linear, box-shadow 0.3s linear;		
+}
+.gw-go-yet-style .gw-go-col:before { margin-top: 0; }
+.gw-go-yet-style .gw-go-col-inner { position:relative; }
+.gw-go-yet-style.gw-go.gw-go-enlarge-current .gw-go-col-wrap.gw-go-hover .gw-go-col-inner {
+	-moz-box-shadow:0 0 70px -10px rgba(0,0,0,0.15);
+	-webkit-box-shadow:0 0 70px -10px rgba(0,0,0,0.15);
+	box-shadow:0 0 70px -10px rgba(0,0,0,0.15);
+}	
+.gw-go-yet-style .gw-go-col-inner:before {
+    content:'';
+	left:0;
+    height:100%;	
+    position:absolute;
+	pointer-events:none;
+    width:100%;
+    z-index:1;
+} 
+.gw-go-yet-style .gw-go-col-inner-layer {
+	height:100%;
+	position:absolute;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;		
+	width:100%;
+}
+.gw-go-yet-style .gw-go-col-inner-layer-over {
+    height:100%;	
+    position: absolute;
+    width:100%;	
+}
+
+
+/* -------------------------------------------------------------------------------- /
+	[2] HEADER
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-header { overflow:visible; }
+
+.gw-go-yet-style .gw-go-header:before {
+    content:'';	
+    height:100%;
+    left:0;
+    position:absolute;	
+    width:100%;	
+}
+.gw-go-yet-style .gw-go-header-top,
+.gw-go-yet-style .gw-go-header-bottom,
+.gw-go-yet-style .gw-go-header-image {
+	position:relative;
+	text-align:center;
+	height:auto;
+}
+.gw-go-yet-style .gw-go-header-top { padding:25px 0 25px 0; }
+.gw-go-yet-style .gw-go-header-bottom {
+	border: 0;
+	padding:25px 0 25px 0;
+}
+.gw-go-yet-style  .gw-go-header-title {
+	font-size:24px;
+	line-height:30px;
+}
+.gw-go-yet-style .gw-go-header-subtitle {
+	font-size:14px;
+	line-height:20px;
+}
+.gw-go-yet-style .gw-go-header-bottom.gw-go-header-text-shadow .gw-go-price-wrap { text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); }
+.gw-go-yet-style .gw-go-price-wrap > span {
+	font-size:50px;
+	line-height:50px;
+}
+.gw-go-yet-style .gw-go-price-wrap small { display: block; }
+.gw-go-yet-style .gw-go-header-bottom [data-id="currency"] {
+	position: relative;
+	vertical-align: top;
+	font-size:0.5em;
+	line-height:1em;
+	top:6px;
+}
+.gw-go-yet-style .gw-go-header-triangle:after {
+	position: absolute;
+	content: '';
+	bottom: -13px;
+	left: 50%;
+	margin-left: -12px;
+	border-width: 13px 12px 0;
+	border-style: solid;
+	border-right-color: transparent;
+	border-left-color: transparent;
+    border-top-color: inherit;	
+}
+.gw-go-yet-style .gw-go-header-bottom:before {
+	content:'';
+	height: 20px;		
+	margin-top: 0;
+	filter: alpha(opacity=20);
+	-khtml-opacity: 0.2;
+	-moz-opacity: 0.2;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";  
+	opacity:0.2;		
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+}
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow1:before { background:url(../images/shadow_1.png) 50% 100% no-repeat; }
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow2:before { background:url(../images/shadow_2.png) 50% 100% no-repeat; }
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow3:before { background:url(../images/shadow_3.png) 50% 100% no-repeat; } 
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow4:before { background:url(../images/shadow_4.png) 50% 100% no-repeat; }
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow5:before { background:url(../images/shadow_5.png) 50% 100% no-repeat; }
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow1:before,
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow2:before,
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow3:before,
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow4:before,
+.gw-go-yet-style .gw-go-header-bottom.gw-go-shadow5:before { background-size:100% 20px; }
+
+.gw-go-yet-style [class*="gw-go-ribbon-left"], 
+.gw-go-yet-style [class*="gw-go-ribbon-right"] {
+	margin-left:0;
+	margin-top:0;
+}
+
+.gw-go-yet-style [class*="gw-go-ribbon-right"] {
+	left:auto;
+	margin-right:0;
+}
+
+
+/* -------------------------------------------------------------------------------- /
+	[3] BODY
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style ul.gw-go-body {
+	border:0; 
+	margin-top:22px !important;
+}
+.gw-go-yet-style ul.gw-go-body > li {
+	border: 0;
+	padding: 6px 0 !important;
+}
+.gw-go-yet-style ul.gw-go-body > li:after {
+    content:'';
+	display:block !important;	
+    bottom:0;
+    position:absolute;	
+    height:0;	
+}
+
+
+/* -------------------------------------------------------------------------------- /
+	[4] FOOTER
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-footer-wrap,
+.gw-go-yet-style .gw-go-footer-row-inner { padding: 0; }
+.gw-go-yet-style .gw-go-footer-rows { padding:25px 0; }
+.gw-go-yet-style .gw-go-footer-row { padding:5px 0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[5] TOOLTIP
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-tooltip {
+	margin-left: 0;
+	margin-top:5px !important;
+}
+.gw-go-yet-style .gw-go-tooltip-visible { margin-top: -5px !important; }
+.gw-go-yet-style .gw-go-tooltip-content {
+	padding: 16px 20px 18px 20px;
+	-moz-border-radius:0;	
+	-webkit-border-radius:0;
+	border-radius:0;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+}
+.gw-go-yet-style .gw-go-tooltip-content:before { /* ? */
+	content: '';
+	position: absolute;
+	left:0;
+	border-right:14px solid transparent;	
+	border-left:0;		
+	border-top:14px solid #9D9D9D;
+	border-top-color: inherit;
+	top:100%;
+}
+
+
+/* -------------------------------------------------------------------------------- /
+	[6] BUTTON
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-btn:before,
+.gw-go-yet-style .gw-go-btn:after { border:none; }
+
+.gw-go-yet-style .gw-go-btn,
+.gw-go-yet-style .gw-go-btn:visited,
+.gw-go-yet-style .gw-go-btn:active,
+.gw-go-yet-style a.gw-go-btn,
+.gw-go-yet-style a.gw-go-btn:visited,
+.gw-go-yet-style a.gw-go-btn:active {
+	cursor:pointer;
+	border-style:solid;
+	border-width:2px !important;
+	border-radius:0;
+	box-shadow:none;
+	-moz-transition:border-color 0.16s, background 0.16s, color 0.16s; 
+	-webkit-transition:border-color 0.16s, background 0.16s, color 0.16s; 
+	transition:border-color 0.16s, background 0.16s, color 0.16s; 
+	z-index: 1;
+}
+.gw-go-yet-style .gw-go-btn,
+.gw-go-yet-style a.gw-go-btn:hover,
+.gw-go-yet-style a.gw-go-btn:hover { text-decoration:none !important; }	
+
+.gw-go-yet-style .gw-go-btn form { display:none !important; }
+
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fullwidth {
+	display: block !important;
+	margin:0 !important;
+}
+
+/* -------------------------------------------------------------------------------- /
+	[6.1] BUTTON EFFECTS - GENERAL
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-btn:before,
+.gw-go-yet-style .gw-go-btn:after {
+	border:none; 
+	content:'';	
+	position:absolute;
+	-moz-transition:all 0.16s; 
+	-webkit-transition:all 0.16s; 
+	transition:all 0.16s;
+	z-index: -1;
+}
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.2] BUTTON EFFECTS - FADE
+/ -------------------------------------------------------------------------------- */
+
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fade:before { 
+	height:100%;
+	left:0;
+	top:0;	
+	width:100%;
+}
+
+/* Outline to filled */
+.gw-go-yet-style .gw-go-btn-out-fill.gw-go-btn-fade:before	{ opacity: 0; }
+.gw-go-yet-style .gw-go-btn-out-fill.gw-go-btn-fade:hover:before { opacity: 1; }
+
+/* Filled to outline */
+.gw-go-yet-style .gw-go-btn-fill-out.gw-go-btn-fade:before	 { opacity: 1; }
+.gw-go-yet-style .gw-go-btn-fill-out.gw-go-btn-fade:hover:before { opacity: 0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.3] BUTTON EFFECTS - SLIDE TO RIGHT
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-yet-style .gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-r:before	{ 
+	height:100%;
+	left:0;	
+	top:0;
+	width:0;
+}
+.gw-go-yet-style .gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-r:hover:before { width:100%; }
+
+/* Filled to outline */
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-r:before	{
+	height:100%;
+	right:0;
+	top:0;	
+	width:100%;
+}
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-r:hover:before { width:0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.4] BUTTON EFFECTS - SLIDE TO LEFT
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-yet-style .gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-l:before {
+	height:100%;
+	right:0;
+	top:0;	
+	width:0;
+}
+.gw-go-yet-style .gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-l:hover:before { width:100%; }
+
+/* Filled to outline */
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-l:before { 
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+}
+.gw-go-yet-style .gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-l:hover:before { width:0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.5] BUTTON EFFECTS -SLIDE TO BOTTOM
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-b:before { 
+	height:0;
+	right:0;
+	top:0;	
+	width: 100%;
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-b:hover:before { height:100%; }
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-b:before { 
+	bottom:0;
+	height:100%;
+ 	right:0;
+ 	width:100%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-b:hover:before { height:0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.6] BUTTON EFFECTS -SLIDE TO TOP
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-t:before { 
+	bottom:0;
+	height:0;
+	right:0;
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-t:hover:before	{ height:100%; }
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-t:before { 
+	height:100%;
+	right:0;	
+	top:0;
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-t:hover:before { height: 0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.7] BUTTON EFFECTS -SLIDEOUT HORIZONTAL
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-oh:before	{ 
+	height:0;
+	left:0;
+	top:50%;
+	width:100%;	
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-oh:hover:before { 
+	top:0;
+	height:100%;
+}
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:before,
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:after { 
+	height:50%;
+	left:0;
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:before { top: 0; }
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:after { bottom:0; }
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:hover:before,
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-oh:hover:after { height:0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.8] BUTTON EFFECTS -SLIDEOUT VERTICAL
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ov:before { 
+	height:100%; 
+	left:50%;	
+	top:0;
+	width:0;	
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ov:hover:before {
+	left:0;	
+	width:100%;
+}
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:before,
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:after { 
+	height:100%;
+	top: 0;
+	width:50%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:before	{ left:0; }
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:after { right:0; }
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:hover:before,
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ov:hover:after { width:0; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.9] BUTTON EFFECTS -SLIDEIN HORIZONTAL
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ih:before { 
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-ih:hover:before { 
+	height:0;
+	top:50%;
+}
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:before,
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:after	{ 
+	height:0;
+	left:0; 
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:before { top:0; }
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:after	{ bottom:0; }
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:hover:before,
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-ih:hover:after { height:50%; }
+
+
+/* -------------------------------------------------------------------------------- /
+	[6.10] BUTTON EFFECTS -SLIDEIN VERTICAL
+/ -------------------------------------------------------------------------------- */
+
+/* Outline to filled */
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-iv:before { 
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+}
+.gw-go-btn.gw-go-btn-fill-out.gw-go-btn-slide-iv:hover:before { 
+	left:50%;
+	width:0;
+}
+
+/* Filled to outline */
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:before,
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:after { 
+	height:100%;
+	top:0;
+	width:0;	
+}
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:before{ left:0; }
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:after { right:0; }
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:hover:before,
+.gw-go-btn.gw-go-btn-out-fill.gw-go-btn-slide-iv:hover:after { width:50%; }
